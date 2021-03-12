@@ -1,0 +1,15 @@
+name: Rebase
+on:
+  pull_request:
+    types: [edited]
+
+jobs:
+  rebase-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Rebase action
+        id: rebase
+        uses: srikarsams/rebase@v1.0
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COMMIT_MESSAGE: "Rebase done successfully!"

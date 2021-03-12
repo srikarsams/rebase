@@ -1,0 +1,14 @@
+name: "Rebase action"
+description: "Rebases the branch if the checkbox is checked in PR Description"
+inputs:
+  GITHUB_TOKEN:
+    description: Github token
+    required: true
+  TRIAL_RUN:
+    description: flag for trial run. No merge will happen, just logs the result.
+    default: false
+  COMMIT_MESSAGE:
+    description: Message to be used while merging!
+runs:
+  using: "node12"
+  main: "index.js"
