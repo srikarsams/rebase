@@ -2,6 +2,10 @@
 
 This action rabases the branches only if the checkbox is checked in the PR description.
 
+```js
+[ ] If you want to rebase/retry this PR, check this box
+```
+
 ## Inputs
 
 ### `GITHUB_ACTION`
@@ -18,7 +22,7 @@ Message to be used while merging!
 
 ## Example usage
 
-```
+```yml
 uses: srikarsams/rebase@v1.0
   with:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
