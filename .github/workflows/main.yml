@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Rebase action
         id: rebase
-        uses: srikarsams/rebase@v1.0
+        uses: srikarsams/rebase@v1.2
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           COMMIT_MESSAGE: "Rebase done successfully!"
