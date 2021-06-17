@@ -1,6 +1,7 @@
 const core = require("@actions/core");
 const github = require("@actions/github");
 
+// Class
 class RebaseAction {
   constructor() {
     this.checkedRegex =
