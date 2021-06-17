@@ -1,6 +1,6 @@
 # Rebase Action
 
-This action rabases the branches only if the checkbox is checked in the PR description. v1.1
+This action rabases the branches only if the checkbox is checked in the PR description. v1.2
 
 ## Inputs
 
