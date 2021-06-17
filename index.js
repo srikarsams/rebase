@@ -3,8 +3,9 @@ const github = require("@actions/github");
 
 class RebaseAction {
   constructor() {
-    this.checkedRegex = /\[x\] If you want to rebase\/retry this PR, check this box/;
-    this.uncheckedString = `[ ] If you want to rebase/retry this PR, check this box`;
+    this.checkedRegex =
+      /\[x\] If you want to merge\/retry this PR, check this box/;
+    this.uncheckedString = `[ ] If you want to merge/retry this PR, check this box`;
     this.inputs = {
       githubToken: core.getInput("GITHUB_TOKEN", { required: true }),
       trialRun: JSON.parse(core.getInput("TRIAL_RUN")) || false,
